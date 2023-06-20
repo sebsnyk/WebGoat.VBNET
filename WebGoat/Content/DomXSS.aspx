@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/Resources/Master-Pages/SiteNew.Master" AutoEventWireup="true" CodeBehind="DomXSS.aspx.cs" Inherits="OWASP.WebGoat.NET.DomXSS" %>
+<%@ Page Language="C#" MasterPageFile="~/Resources/Master-Pages/SiteNew.Master" AutoEventWireup="true" CodeBehind="DomXSS.aspx.vb" Inherits="OWASP.WebGoat.NET.DomXSS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyContentPlaceholder" runat="server">
@@ -25,17 +25,17 @@
     
     <div class="tabs">
         <ul class="tabNavigation">
-            <li><a class="" href="#first">Murphy’s Law I</a></li>
-            <li><a class="" href="#second">Murphy’s Law II</a></li>
+            <li><a class="" href="#first">Murphyï¿½s Law I</a></li>
+            <li><a class="" href="#second">Murphyï¿½s Law II</a></li>
             <li><a class="" href="#third">Smith's Law</a></li>
         </ul>
 
         <div id="first">
-            <h2>Murphy’s Law I</h2>
+            <h2>Murphyï¿½s Law I</h2>
             <p>If that guy has any way of making a mistake, he will.</p>
         </div>
         <div id="second">
-            <h2>Murphy’s Law II</h2>
+            <h2>Murphyï¿½s Law II</h2>
             <p>Everything takes longer than you think.</p>
         </div>
         <div id="third">

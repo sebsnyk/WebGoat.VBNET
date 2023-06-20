@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="OWASP.WebGoat.NET.MainPage" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="MainPage.aspx.vb" Inherits="OWASP.WebGoat.NET.MainPage" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="HelpContentPlaceholder" runat="server">
     Try uploading content that will run on the server, such as an .aspx file! 

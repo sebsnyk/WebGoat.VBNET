@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" ValidateRequest="false" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="OWASP.WebGoat.NET.WebGoatCoins.ProductDetails" %>
+﻿<%@ Page Title="" Language="C#" ValidateRequest="false" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.vb" Inherits="OWASP.WebGoat.NET.WebGoatCoins.ProductDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="HelpContentPlaceholder" runat="server">

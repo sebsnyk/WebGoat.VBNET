@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" EnableTheming="false" CodeBehind="Invoice.aspx.cs" Inherits="OWASP.WebGoat.NET.WebGoatCoins.Invoice" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" EnableTheming="false" CodeBehind="Invoice.aspx.vb" Inherits="OWASP.WebGoat.NET.WebGoatCoins.Invoice" %>
 
 <!DOCTYPE html>
 

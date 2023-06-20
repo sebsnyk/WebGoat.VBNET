@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SQLInjection.aspx.cs" Inherits="OWASP.WebGoat.NET.SQLInjection" MasterPageFile="~/Resources/Master-Pages/Site.Master" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SQLInjection.aspx.vb" Inherits="OWASP.WebGoat.NET.SQLInjection" MasterPageFile="~/Resources/Master-Pages/Site.Master" %>
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="HelpContentPlaceholder" runat="server">

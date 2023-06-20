@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project DefaultTargets="Build" ToolsVersion="12.0"
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+    Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <GenerateFullPaths>True</GenerateFullPaths>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -58,24 +60,29 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference
+      Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference
+      Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.SQLite, Version=1.0.96.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+    <Reference
+      Include="System.Data.SQLite, Version=1.0.96.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Core.1.0.96.0\lib\net451\System.Data.SQLite.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite.EF6, Version=1.0.96.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+    <Reference
+      Include="System.Data.SQLite.EF6, Version=1.0.96.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\System.Data.SQLite.EF6.1.0.96.0\lib\net451\System.Data.SQLite.EF6.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite.Linq, Version=1.0.96.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+    <Reference
+      Include="System.Data.SQLite.Linq, Version=1.0.96.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.96.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
@@ -91,16 +98,20 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Data" />
     <Reference Include="System.Configuration" />
-    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+    <Reference
+      Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
       <HintPath>lib\mysql.data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.Entity, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+    <Reference
+      Include="MySql.Data.Entity, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
       <HintPath>lib\mysql.data.entity.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.VisualStudio, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+    <Reference
+      Include="MySql.VisualStudio, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
       <HintPath>lib\mysql.visualstudio.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Web, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+    <Reference
+      Include="MySql.Web, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
       <HintPath>lib\mysql.web.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
@@ -553,574 +564,575 @@
     <Content Include="Content\VerbTamperingAttack.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Code\CustomerLoginData.cs" />
-    <Compile Include="Content\EFSQLInjection.aspx.cs">
+    <Compile Include="App_Code\CustomerLoginData.vb" />
+    <Compile Include="Content\EFSQLInjection.aspx.vb">
       <DependentUpon>EFSQLInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\EFSQLInjection.aspx.designer.cs">
+    <Compile Include="Content\EFSQLInjection.aspx.designer.vb">
       <DependentUpon>EFSQLInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Categories.cs" />
-    <Compile Include="Entities\CoinsDB.cs" />
-    <Compile Include="Entities\Comments.cs" />
-    <Compile Include="Content\ForgotPassword.aspx.cs">
+    <Compile Include="Entities\Categories.vb" />
+    <Compile Include="Entities\CoinsDB.vb" />
+    <Compile Include="Entities\Comments.vb" />
+    <Compile Include="Content\ForgotPassword.aspx.vb">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ForgotPassword.aspx.designer.cs">
+    <Compile Include="Content\ForgotPassword.aspx.designer.vb">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\UploadPathManipulation.aspx.cs">
+    <Compile Include="Content\UploadPathManipulation.aspx.vb">
       <DependentUpon>UploadPathManipulation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\UploadPathManipulation.aspx.designer.cs">
+    <Compile Include="Content\UploadPathManipulation.aspx.designer.vb">
       <DependentUpon>UploadPathManipulation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entities\CustomerLogin.cs" />
-    <Compile Include="Entities\Customers.cs" />
-    <Compile Include="Entities\Employees.cs" />
-    <Compile Include="Global.asax.cs">
+    <Compile Include="Entities\CustomerLogin.vb" />
+    <Compile Include="Entities\Customers.vb" />
+    <Compile Include="Entities\Employees.vb" />
+    <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Content\About.aspx.cs">
+    <Compile Include="Content\About.aspx.vb">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\About.aspx.designer.cs">
+    <Compile Include="Content\About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\BasicAuth.aspx.cs">
+    <Compile Include="Content\BasicAuth.aspx.vb">
       <DependentUpon>BasicAuth.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\BasicAuth.aspx.designer.cs">
+    <Compile Include="Content\BasicAuth.aspx.designer.vb">
       <DependentUpon>BasicAuth.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Challenge1.aspx.cs">
+    <Compile Include="Content\Challenge1.aspx.vb">
       <DependentUpon>Challenge1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Challenge1.aspx.designer.cs">
+    <Compile Include="Content\Challenge1.aspx.designer.vb">
       <DependentUpon>Challenge1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Challenge2.aspx.cs">
+    <Compile Include="Content\Challenge2.aspx.vb">
       <DependentUpon>Challenge2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Challenge2.aspx.designer.cs">
+    <Compile Include="Content\Challenge2.aspx.designer.vb">
       <DependentUpon>Challenge2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Challenge3.aspx.cs">
+    <Compile Include="Content\Challenge3.aspx.vb">
       <DependentUpon>Challenge3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Challenge3.aspx.designer.cs">
+    <Compile Include="Content\Challenge3.aspx.designer.vb">
       <DependentUpon>Challenge3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ChangePwd.aspx.cs">
+    <Compile Include="Content\ChangePwd.aspx.vb">
       <DependentUpon>ChangePwd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ChangePwd.aspx.designer.cs">
+    <Compile Include="Content\ChangePwd.aspx.designer.vb">
       <DependentUpon>ChangePwd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ClientSideStorage.aspx.cs">
+    <Compile Include="Content\ClientSideStorage.aspx.vb">
       <DependentUpon>ClientSideStorage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ClientSideStorage.aspx.designer.cs">
+    <Compile Include="Content\ClientSideStorage.aspx.designer.vb">
       <DependentUpon>ClientSideStorage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\CommandInjection.aspx.cs">
+    <Compile Include="Content\CommandInjection.aspx.vb">
       <DependentUpon>CommandInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\CommandInjection.aspx.designer.cs">
+    <Compile Include="Content\CommandInjection.aspx.designer.vb">
       <DependentUpon>CommandInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dbtest.aspx.cs">
+    <Compile Include="dbtest.aspx.vb">
       <DependentUpon>RebuildDatabase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dbtest.aspx.designer.cs">
+    <Compile Include="dbtest.aspx.designer.vb">
       <DependentUpon>RebuildDatabase.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\CSRFDemo.aspx.cs">
+    <Compile Include="Content\CSRFDemo.aspx.vb">
       <DependentUpon>CSRFDemo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\CSRFDemo.aspx.designer.cs">
+    <Compile Include="Content\CSRFDemo.aspx.designer.vb">
       <DependentUpon>CSRFDemo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\DomXSS.aspx.cs">
+    <Compile Include="Content\DomXSS.aspx.vb">
       <DependentUpon>DomXSS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\DomXSS.aspx.designer.cs">
+    <Compile Include="Content\DomXSS.aspx.designer.vb">
       <DependentUpon>DomXSS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\EmbeddedError.aspx.cs">
+    <Compile Include="Content\EmbeddedError.aspx.vb">
       <DependentUpon>EmbeddedError.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\EmbeddedError.aspx.designer.cs">
+    <Compile Include="Content\EmbeddedError.aspx.designer.vb">
       <DependentUpon>EmbeddedError.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\EncryptVSEncode.aspx.cs">
+    <Compile Include="Content\EncryptVSEncode.aspx.vb">
       <DependentUpon>EncryptVSEncode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\EncryptVSEncode.aspx.designer.cs">
+    <Compile Include="Content\EncryptVSEncode.aspx.designer.vb">
       <DependentUpon>EncryptVSEncode.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Error.aspx.cs">
+    <Compile Include="Content\Error.aspx.vb">
       <DependentUpon>Error.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Error.aspx.designer.cs">
+    <Compile Include="Content\Error.aspx.designer.vb">
       <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ExploitDebug.aspx.cs">
+    <Compile Include="Content\ExploitDebug.aspx.vb">
       <DependentUpon>ExploitDebug.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ExploitDebug.aspx.designer.cs">
+    <Compile Include="Content\ExploitDebug.aspx.designer.vb">
       <DependentUpon>ExploitDebug.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\FlashScripting.aspx.cs">
+    <Compile Include="Content\FlashScripting.aspx.vb">
       <DependentUpon>FlashScripting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\FlashScripting.aspx.designer.cs">
+    <Compile Include="Content\FlashScripting.aspx.designer.vb">
       <DependentUpon>FlashScripting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ForcedBrowsing.aspx.cs">
+    <Compile Include="Content\ForcedBrowsing.aspx.vb">
       <DependentUpon>ForcedBrowsing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ForcedBrowsing.aspx.designer.cs">
+    <Compile Include="Content\ForcedBrowsing.aspx.designer.vb">
       <DependentUpon>ForcedBrowsing.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\FormBasedAuth.aspx.cs">
+    <Compile Include="Content\FormBasedAuth.aspx.vb">
       <DependentUpon>FormBasedAuth.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\FormBasedAuth.aspx.designer.cs">
+    <Compile Include="Content\FormBasedAuth.aspx.designer.vb">
       <DependentUpon>FormBasedAuth.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Global.asax.cs">
+    <Compile Include="Content\Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Content\HiddenField.aspx.cs">
+    <Compile Include="Content\HiddenField.aspx.vb">
       <DependentUpon>HiddenField.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\HiddenField.aspx.designer.cs">
+    <Compile Include="Content\HiddenField.aspx.designer.vb">
       <DependentUpon>HiddenField.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\InjectionExercise.aspx.cs">
+    <Compile Include="Content\InjectionExercise.aspx.vb">
       <DependentUpon>InjectionExercise.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\InjectionExercise.aspx.designer.cs">
+    <Compile Include="Content\InjectionExercise.aspx.designer.vb">
       <DependentUpon>InjectionExercise.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\jQueryInjection.aspx.cs">
+    <Compile Include="Content\jQueryInjection.aspx.vb">
       <DependentUpon>jQueryInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\jQueryInjection.aspx.designer.cs">
+    <Compile Include="Content\jQueryInjection.aspx.designer.vb">
       <DependentUpon>jQueryInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\XSSExercise.aspx.cs">
+    <Compile Include="Content\XSSExercise.aspx.vb">
       <DependentUpon>XSSExercise.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\XSSExercise.aspx.designer.cs">
+    <Compile Include="Content\XSSExercise.aspx.designer.vb">
       <DependentUpon>XSSExercise.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\WSDL.aspx.cs">
+    <Compile Include="Content\WSDL.aspx.vb">
       <DependentUpon>WSDL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\WSDL.aspx.designer.cs">
+    <Compile Include="Content\WSDL.aspx.designer.vb">
       <DependentUpon>WSDL.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\WSAttacks.aspx.cs">
+    <Compile Include="Content\WSAttacks.aspx.vb">
       <DependentUpon>WSAttacks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\WSAttacks.aspx.designer.cs">
+    <Compile Include="Content\WSAttacks.aspx.designer.vb">
       <DependentUpon>WSAttacks.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\JSONInjection.aspx.cs">
+    <Compile Include="Content\JSONInjection.aspx.vb">
       <DependentUpon>JSONInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\JSONInjection.aspx.designer.cs">
+    <Compile Include="Content\JSONInjection.aspx.designer.vb">
       <DependentUpon>JSONInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\LogInjection.aspx.cs">
+    <Compile Include="Content\LogInjection.aspx.vb">
       <DependentUpon>LogInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\LogInjection.aspx.designer.cs">
+    <Compile Include="Content\LogInjection.aspx.designer.vb">
       <DependentUpon>LogInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\LogoutIssues.aspx.cs">
+    <Compile Include="Content\LogoutIssues.aspx.vb">
       <DependentUpon>LogoutIssues.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\LogoutIssues.aspx.designer.cs">
+    <Compile Include="Content\LogoutIssues.aspx.designer.vb">
       <DependentUpon>LogoutIssues.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Worm.aspx.cs">
+    <Compile Include="Content\Worm.aspx.vb">
       <DependentUpon>Worm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Worm.aspx.designer.cs">
+    <Compile Include="Content\Worm.aspx.designer.vb">
       <DependentUpon>Worm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Viewstate.aspx.cs">
+    <Compile Include="Content\Viewstate.aspx.vb">
       <DependentUpon>Viewstate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Viewstate.aspx.designer.cs">
+    <Compile Include="Content\Viewstate.aspx.designer.vb">
       <DependentUpon>Viewstate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\StoredXSS.aspx.cs">
+    <Compile Include="Content\StoredXSS.aspx.vb">
       <DependentUpon>StoredXSS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\StoredXSS.aspx.designer.cs">
+    <Compile Include="Content\StoredXSS.aspx.designer.vb">
       <DependentUpon>StoredXSS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\SQLInjectionDiscovery.aspx.cs">
+    <Compile Include="Content\SQLInjectionDiscovery.aspx.vb">
       <DependentUpon>SQLInjectionDiscovery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\SQLInjectionDiscovery.aspx.designer.cs">
+    <Compile Include="Content\SQLInjectionDiscovery.aspx.designer.vb">
       <DependentUpon>SQLInjectionDiscovery.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\SQLInjection.aspx.cs">
+    <Compile Include="Content\SQLInjection.aspx.vb">
       <DependentUpon>SQLInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\SQLInjection.aspx.designer.cs">
+    <Compile Include="Content\SQLInjection.aspx.designer.vb">
       <DependentUpon>SQLInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\SessionExercise.aspx.cs">
+    <Compile Include="Content\SessionExercise.aspx.vb">
       <DependentUpon>SessionExercise.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\SessionExercise.aspx.designer.cs">
+    <Compile Include="Content\SessionExercise.aspx.designer.vb">
       <DependentUpon>SessionExercise.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\SessionFixation.aspx.cs">
+    <Compile Include="Content\SessionFixation.aspx.vb">
       <DependentUpon>SessionFixation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\SessionFixation.aspx.designer.cs">
+    <Compile Include="Content\SessionFixation.aspx.designer.vb">
       <DependentUpon>SessionFixation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\SamplePage.aspx.cs">
+    <Compile Include="Content\SamplePage.aspx.vb">
       <DependentUpon>SamplePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\SamplePage.aspx.designer.cs">
+    <Compile Include="Content\SamplePage.aspx.designer.vb">
       <DependentUpon>SamplePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ReflectedXSS.aspx.cs">
+    <Compile Include="Content\ReflectedXSS.aspx.vb">
       <DependentUpon>ReflectedXSS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ReflectedXSS.aspx.designer.cs">
+    <Compile Include="Content\ReflectedXSS.aspx.designer.vb">
       <DependentUpon>ReflectedXSS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ParamTampering.aspx.cs">
+    <Compile Include="Content\ParamTampering.aspx.vb">
       <DependentUpon>ParamTampering.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ParamTampering.aspx.designer.cs">
+    <Compile Include="Content\ParamTampering.aspx.designer.vb">
       <DependentUpon>ParamTampering.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\ResponseSplitting.aspx.cs">
+    <Compile Include="Content\ResponseSplitting.aspx.vb">
       <DependentUpon>ResponseSplitting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ResponseSplitting.aspx.designer.cs">
+    <Compile Include="Content\ResponseSplitting.aspx.designer.vb">
       <DependentUpon>ResponseSplitting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.aspx.cs">
+    <Compile Include="LoginPage.aspx.vb">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoginPage.aspx.designer.cs">
+    <Compile Include="LoginPage.aspx.designer.vb">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ForgotPassword.aspx.cs">
+    <Compile Include="ForgotPassword.aspx.vb">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ForgotPassword.aspx.designer.cs">
+    <Compile Include="ForgotPassword.aspx.designer.vb">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ChangePassword.aspx.cs">
+    <Compile Include="ChangePassword.aspx.vb">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ChangePassword.aspx.designer.cs">
+    <Compile Include="ChangePassword.aspx.designer.vb">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\PathManipulation.aspx.cs">
+    <Compile Include="Content\PathManipulation.aspx.vb">
       <DependentUpon>PathManipulation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\PathManipulation.aspx.designer.cs">
+    <Compile Include="Content\PathManipulation.aspx.designer.vb">
       <DependentUpon>PathManipulation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\PwdComplexity.aspx.cs">
+    <Compile Include="Content\PwdComplexity.aspx.vb">
       <DependentUpon>PwdComplexity.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddNewUser.aspx.cs">
+    <Compile Include="AddNewUser.aspx.vb">
       <DependentUpon>AddNewUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddNewUser.aspx.designer.cs">
+    <Compile Include="AddNewUser.aspx.designer.vb">
       <DependentUpon>AddNewUser.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Offices.cs" />
-    <Compile Include="Entities\OrderDetails.cs" />
-    <Compile Include="Entities\Orders.cs" />
-    <Compile Include="Entities\Payments.cs" />
-    <Compile Include="Entities\Products.cs" />
-    <Compile Include="Entities\SecurityQuestions.cs" />
-    <Compile Include="Resources\Master-Pages\SiteNew.Master.cs">
+    <Compile Include="Entities\Offices.vb" />
+    <Compile Include="Entities\OrderDetails.vb" />
+    <Compile Include="Entities\Orders.vb" />
+    <Compile Include="Entities\Payments.vb" />
+    <Compile Include="Entities\Products.vb" />
+    <Compile Include="Entities\SecurityQuestions.vb" />
+    <Compile Include="Resources\Master-Pages\SiteNew.Master.vb">
       <DependentUpon>SiteNew.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Resources\Master-Pages\SiteNew.Master.designer.cs">
+    <Compile Include="Resources\Master-Pages\SiteNew.Master.designer.vb">
       <DependentUpon>SiteNew.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\AddNewCustomer.aspx.cs">
+    <Compile Include="WebGoatCoins\AddNewCustomer.aspx.vb">
       <DependentUpon>AddNewCustomer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\AddNewCustomer.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\AddNewCustomer.aspx.designer.vb">
       <DependentUpon>AddNewCustomer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Autocomplete.ashx.cs">
+    <Compile Include="WebGoatCoins\Autocomplete.ashx.vb">
       <DependentUpon>Autocomplete.ashx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Buy.aspx.cs">
+    <Compile Include="WebGoatCoins\Buy.aspx.vb">
       <DependentUpon>Buy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Buy.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Buy.aspx.designer.vb">
       <DependentUpon>Buy.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Catalog.aspx.cs">
+    <Compile Include="WebGoatCoins\Catalog.aspx.vb">
       <DependentUpon>Catalog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Catalog.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Catalog.aspx.designer.vb">
       <DependentUpon>Catalog.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\ChangePassword.aspx.cs">
+    <Compile Include="WebGoatCoins\ChangePassword.aspx.vb">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\ChangePassword.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\ChangePassword.aspx.designer.vb">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\CustomerLogin.aspx.cs">
+    <Compile Include="WebGoatCoins\CustomerLogin.aspx.vb">
       <DependentUpon>CustomerLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\CustomerLogin.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\CustomerLogin.aspx.designer.vb">
       <DependentUpon>CustomerLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\CustomerSettings.aspx.cs">
+    <Compile Include="WebGoatCoins\CustomerSettings.aspx.vb">
       <DependentUpon>CustomerSettings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\CustomerSettings.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\CustomerSettings.aspx.designer.vb">
       <DependentUpon>CustomerSettings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Debug.aspx.cs">
+    <Compile Include="WebGoatCoins\Debug.aspx.vb">
       <DependentUpon>Debug.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Debug.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Debug.aspx.designer.vb">
       <DependentUpon>Debug.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\ForgotPassword.aspx.cs">
+    <Compile Include="WebGoatCoins\ForgotPassword.aspx.vb">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\ForgotPassword.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\ForgotPassword.aspx.designer.vb">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Invoice.aspx.cs">
+    <Compile Include="WebGoatCoins\Invoice.aspx.vb">
       <DependentUpon>Invoice.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Invoice.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Invoice.aspx.designer.vb">
       <DependentUpon>Invoice.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Logout.aspx.cs">
+    <Compile Include="WebGoatCoins\Logout.aspx.vb">
       <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Logout.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Logout.aspx.designer.vb">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\MainPage.aspx.cs">
+    <Compile Include="WebGoatCoins\MainPage.aspx.vb">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\MainPage.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\MainPage.aspx.designer.vb">
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Messages.aspx.cs">
+    <Compile Include="WebGoatCoins\Messages.aspx.vb">
       <DependentUpon>Messages.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Messages.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Messages.aspx.designer.vb">
       <DependentUpon>Messages.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\Orders.aspx.cs">
+    <Compile Include="WebGoatCoins\Orders.aspx.vb">
       <DependentUpon>Orders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\Orders.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\Orders.aspx.designer.vb">
       <DependentUpon>Orders.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebGoatCoins\ProductDetails.aspx.cs">
+    <Compile Include="WebGoatCoins\ProductDetails.aspx.vb">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebGoatCoins\ProductDetails.aspx.designer.cs">
+    <Compile Include="WebGoatCoins\ProductDetails.aspx.designer.vb">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProxySetup.aspx.cs">
+    <Compile Include="ProxySetup.aspx.vb">
       <DependentUpon>ProxySetup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProxySetup.aspx.designer.cs">
+    <Compile Include="ProxySetup.aspx.designer.vb">
       <DependentUpon>ProxySetup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Master-Pages\Site.Master.cs">
+    <Compile Include="Resources\Master-Pages\Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Resources\Master-Pages\Site.Master.designer.cs">
+    <Compile Include="Resources\Master-Pages\Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\DB\SqliteDbProvider.cs" />
-    <Compile Include="App_Code\DB\MySqlDbProvider.cs" />
-    <Compile Include="App_Code\Encoder.cs" />
-    <Compile Include="App_Code\DB\DbProviderFactory.cs" />
-    <Compile Include="App_Code\Settings.cs" />
-    <Compile Include="App_Code\CookieManager.cs" />
-    <Compile Include="App_Code\DB\DummyDbProvider.cs" />
-    <Compile Include="App_Code\ConfigFile.cs" />
-    <Compile Include="App_Code\DB\DbConstants.cs" />
-    <Compile Include="App_Code\Util.cs" />
-    <Compile Include="Content\Trace.aspx.cs">
+    <Compile Include="App_Code\DB\SqliteDbProvider.vb" />
+    <Compile Include="App_Code\DB\MySqlDbProvider.vb" />
+    <Compile Include="App_Code\Encoder.vb" />
+    <Compile Include="App_Code\DB\DbProviderFactory.vb" />
+    <Compile Include="App_Code\Settings.vb" />
+    <Compile Include="App_Code\CookieManager.vb" />
+    <Compile Include="App_Code\DB\DummyDbProvider.vb" />
+    <Compile Include="App_Code\ConfigFile.vb" />
+    <Compile Include="App_Code\DB\DbConstants.vb" />
+    <Compile Include="App_Code\Util.vb" />
+    <Compile Include="Content\Trace.aspx.vb">
       <DependentUpon>Trace.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Trace.aspx.designer.cs">
+    <Compile Include="Content\Trace.aspx.designer.vb">
       <DependentUpon>Trace.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\XPathInjection.aspx.cs">
+    <Compile Include="Content\XPathInjection.aspx.vb">
       <DependentUpon>XPathInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\XPathInjection.aspx.designer.cs">
+    <Compile Include="Content\XPathInjection.aspx.designer.vb">
       <DependentUpon>XPathInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\HeaderInjection.aspx.cs">
+    <Compile Include="Content\HeaderInjection.aspx.vb">
       <DependentUpon>HeaderInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\HeaderInjection.aspx.designer.cs">
+    <Compile Include="Content\HeaderInjection.aspx.designer.vb">
       <DependentUpon>HeaderInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\MessageDigest.aspx.cs">
+    <Compile Include="Content\MessageDigest.aspx.vb">
       <DependentUpon>MessageDigest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\MessageDigest.aspx.designer.cs">
+    <Compile Include="Content\MessageDigest.aspx.designer.vb">
       <DependentUpon>MessageDigest.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\XMLInjection.aspx.cs">
+    <Compile Include="Content\XMLInjection.aspx.vb">
       <DependentUpon>XMLInjection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\XMLInjection.aspx.designer.cs">
+    <Compile Include="Content\XMLInjection.aspx.designer.vb">
       <DependentUpon>XMLInjection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\WeakMessageDigest.cs" />
-    <Compile Include="Content\ReadlineDoS.aspx.cs">
+    <Compile Include="App_Code\WeakMessageDigest.vb" />
+    <Compile Include="Content\ReadlineDoS.aspx.vb">
       <DependentUpon>ReadlineDoS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ReadlineDoS.aspx.designer.cs">
+    <Compile Include="Content\ReadlineDoS.aspx.designer.vb">
       <DependentUpon>ReadlineDoS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\RegexDoS.aspx.cs">
+    <Compile Include="Content\RegexDoS.aspx.vb">
       <DependentUpon>RegexDoS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\RegexDoS.aspx.designer.cs">
+    <Compile Include="Content\RegexDoS.aspx.designer.vb">
       <DependentUpon>RegexDoS.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Unsafe.aspx.cs">
+    <Compile Include="Content\Unsafe.aspx.vb">
       <DependentUpon>Unsafe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Unsafe.aspx.designer.cs">
+    <Compile Include="Content\Unsafe.aspx.designer.vb">
       <DependentUpon>Unsafe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\Random.aspx.cs">
+    <Compile Include="Content\Random.aspx.vb">
       <DependentUpon>Random.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\Random.aspx.designer.cs">
+    <Compile Include="Content\Random.aspx.designer.vb">
       <DependentUpon>Random.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\WeakRandom.cs" />
-    <Compile Include="Content\VerbTampering.aspx.cs">
+    <Compile Include="App_Code\WeakRandom.vb" />
+    <Compile Include="Content\VerbTampering.aspx.vb">
       <DependentUpon>VerbTampering.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\VerbTampering.aspx.designer.cs">
+    <Compile Include="Content\VerbTampering.aspx.designer.vb">
       <DependentUpon>VerbTampering.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Content\VerbTamperingAttack.aspx.cs">
+    <Compile Include="Content\VerbTamperingAttack.aspx.vb">
       <DependentUpon>VerbTamperingAttack.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\VerbTamperingAttack.aspx.designer.cs">
+    <Compile Include="Content\VerbTamperingAttack.aspx.designer.vb">
       <DependentUpon>VerbTamperingAttack.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\DB\IDbProvider.cs" />
+    <Compile Include="App_Code\DB\IDbProvider.vb" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">
+      $(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -1133,12 +1145,14 @@
           <TextStylePolicy inheritsSet="null" scope="application/config+xml" />
           <XmlFormattingPolicy inheritsSet="null" scope="application/config+xml" />
           <TextStylePolicy inheritsSet="null" scope="application/xml" />
-          <XmlFormattingPolicy inheritsSet="Mono" inheritsScope="application/xml" scope="application/xml" />
+          <XmlFormattingPolicy inheritsSet="Mono" inheritsScope="application/xml"
+            scope="application/xml" />
           <TextStylePolicy inheritsSet="null" scope="application/javascript" />
           <TextStylePolicy inheritsSet="null" scope="application/x-master-page" />
           <TextStylePolicy inheritsSet="null" scope="application/x-ashx" />
         </Policies>
-        <XspParameters Port="8081" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+        <XspParameters Port="8081" Address="127.0.0.1" SslMode="None" SslProtocol="Default"
+          KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
       </Properties>
     </MonoDevelop>
     <VisualStudio>
@@ -1193,13 +1207,22 @@
     <None Include="DB_Scripts\create_webgoatcoins_sqlite3.sql" />
   </ItemGroup>
   <ItemGroup />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
-  <Import Project="..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets"
+    Condition="'$(VSToolsPath)' != ''" />
+  <Import
+    Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets"
+    Condition="false" />
+  <Import
+    Project="..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets"
+    Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable
+        NuGet Package Restore to download them. For more information, see
+        http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets'))" />
+    <Error
+      Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets')"
+      Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.96.0\build\net451\System.Data.SQLite.Core.targets'))" />
   </Target>
 </Project>

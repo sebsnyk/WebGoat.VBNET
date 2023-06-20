@@ -1,5 +1,5 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/Resources/Master-Pages/Site.Master"
-    AutoEventWireup="true" CodeBehind="MessageDigest.aspx.cs" Inherits="OWASP.WebGoat.NET.Content.Unsafe" %>
+    AutoEventWireup="true" CodeBehind="MessageDigest.aspx.vb" Inherits="OWASP.WebGoat.NET.Content.Unsafe" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
 
     <%--

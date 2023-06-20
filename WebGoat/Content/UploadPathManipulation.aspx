@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" 
-	CodeBehind="UploadPathManipulation.aspx.cs" Inherits="OWASP.WebGoat.NET.UploadPathManipulation" %>
+	CodeBehind="UploadPathManipulation.aspx.vb" Inherits="OWASP.WebGoat.NET.UploadPathManipulation" %>
 	
 <asp:Content ID="Content3" ContentPlaceHolderID="HelpContentPlaceholder" runat="server">
 	This lesson illustrates the common problem of trusting a user-supplied filename, then using it to generate a file path.  Try uploading a file that will execute on the server.

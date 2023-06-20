@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="Autocomplete.ashx.cs" Class="OWASP.WebGoat.NET.WebGoatCoins.Autocomplete" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="Autocomplete.ashx.vb" Class="OWASP.WebGoat.NET.WebGoatCoins.Autocomplete" %>
