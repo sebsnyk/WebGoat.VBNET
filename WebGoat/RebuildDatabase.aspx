@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dbtest.aspx.vb" Inherits="OWASP.WebGoat.NET.RebuildDatabase" MasterPageFile="~/Resources/Master-Pages/Site.Master" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="dbtest.aspx.vb" Inherits="OWASP.WebGoat.NET.RebuildDatabase" MasterPageFile="~/Resources/Master-Pages/Site.Master" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="HelpContentPlaceholder" runat="server">
     Click to button to refresh the database used in WebGoat.NET

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="EFSQLInjection.aspx.vb" Inherits="OWASP.WebGoat.NET.Content.EFSQLInjection" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="EFSQLInjection.aspx.vb" Inherits="OWASP.WebGoat.NET.Content.EFSQLInjection" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="HelpContentPlaceholder" runat="server">
 </asp:Content>
 

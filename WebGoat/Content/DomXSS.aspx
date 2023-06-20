@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/Resources/Master-Pages/SiteNew.Master" AutoEventWireup="true" CodeBehind="DomXSS.aspx.vb" Inherits="OWASP.WebGoat.NET.DomXSS" %>
+<%@ Page Language="VB" MasterPageFile="~/Resources/Master-Pages/SiteNew.Master" AutoEventWireup="true" CodeBehind="DomXSS.aspx.vb" Inherits="OWASP.WebGoat.NET.DomXSS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BodyContentPlaceholder" runat="server">

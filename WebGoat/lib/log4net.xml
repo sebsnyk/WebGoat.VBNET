@@ -6933,7 +6933,7 @@
             This example shows how to log receive logging events that are sent
             on IP address 244.0.0.1 and port 8080 to the console. The event is
             encoded in the packet as a unicode string and it is decoded as such.
-            <code lang="C#">
+            <code lang="VB">
             IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, 0);
             UdpClient udpClient;
             byte[] buffer;
@@ -7594,7 +7594,7 @@
             The following example configures log4net using a configuration file, of which the
             location is stored in the application's configuration file :
             </example>
-                <code lang="C#">
+                <code lang="VB">
             using log4net.Config;
             using System.IO;
             using System.Configuration;
@@ -7657,7 +7657,7 @@
             The following example configures log4net using a configuration file, of which the
             location is stored in the application's configuration file :
             </example>
-                <code lang="C#">
+                <code lang="VB">
             using log4net.Config;
             using System.IO;
             using System.Configuration;
@@ -8321,7 +8321,7 @@
             The following example configures log4net using a configuration file, of which the
             location is stored in the application's configuration file :
             </example>
-                <code lang="C#">
+                <code lang="VB">
             using log4net.Config;
             using System.IO;
             using System.Configuration;
@@ -8400,7 +8400,7 @@
             The following example configures log4net using a configuration file, of which the
             location is stored in the application's configuration file :
             </example>
-                <code lang="C#">
+                <code lang="VB">
             using log4net.Config;
             using System.IO;
             using System.Configuration;
@@ -11068,7 +11068,7 @@
                 <para>
             For some <c>log</c> Logger object, when you write:
             </para>
-                <code lang="C#">
+                <code lang="VB">
             log.Debug("This is entry number: " + i );
             </code>
                 <para>
@@ -11078,7 +11078,7 @@
                 <para>
             If you are worried about speed, then you should write:
             </para>
-                <code lang="C#">
+                <code lang="VB">
             if (log.IsDebugEnabled())
             {
             	 log.Debug("This is entry number: " + i );
@@ -15877,7 +15877,7 @@
             event to be formatted as a <see cref="T:System.String" /> then the following
             code can be used to format the event into a <see cref="T:System.IO.StringWriter" />.
             </para>
-                <code lang="C#">
+                <code lang="VB">
             StringWriter writer = new StringWriter();
             Layout.Format(writer, loggingEvent);
             string formattedEvent = writer.ToString();
@@ -16161,7 +16161,7 @@
             that the log4net environment was set to use a PatternLayout. Then the
             statements
             </para>
-                <code lang="C#">
+                <code lang="VB">
             ILog log = LogManager.GetLogger(typeof(TestApp));
             log.Debug("Message 1");
             log.Warn("Message 2");
@@ -24283,7 +24283,7 @@
             For example, if props contains <c>key=value</c>, then the call
             </para>
                 <para>
-                    <code lang="C#">
+                    <code lang="VB">
             string s = OptionConverter.SubstituteVariables("Value of key is ${key}.");
             </code>
                 </para>
@@ -24299,7 +24299,7 @@
             "nonExistentKey", then the call
             </para>
                 <para>
-                    <code lang="C#">
+                    <code lang="VB">
             string s = OptionConverter.SubstituteVariables("Value of nonExistentKey is [${nonExistentKey}]");
             </code>
                 </para>
@@ -26691,7 +26691,7 @@
             </para>
             </remarks>
             <example>Simple example of using the <c>Push</c> method with the <c>using</c> keyword.
-            <code lang="C#">
+            <code lang="VB">
             using(log4net.ThreadContext.Stacks["NDC"].Push("Stack_Message"))
             {
             		log.Warn("This should have an ThreadContext Stack message");
@@ -26847,7 +26847,7 @@
             </para>
             </remarks>
             <example>
-                <code lang="C#">
+                <code lang="VB">
             GlobalContext.Properties["hostname"] = Environment.MachineName;
             </code>
             </example>
@@ -26904,7 +26904,7 @@
             </para>
             </remarks>
             <example>Simple example of logging messages
-            <code lang="C#">
+            <code lang="VB">
             ILog log = LogManager.GetLogger("application-log");
             log.Info("Application Start");
             log.Debug("This is a debug message");
@@ -26931,7 +26931,7 @@
             disabled log debug statements.
             </para>
                 <para> For some ILog interface <c>log</c>, when you write:</para>
-                <code lang="C#">
+                <code lang="VB">
             log.Debug("This is entry number: " + i );
             </code>
                 <para>
@@ -26941,7 +26941,7 @@
                 <para>
             If you are worried about speed (who isn't), then you should write:
             </para>
-                <code lang="C#">
+                <code lang="VB">
             if (log.IsDebugEnabled)
             {
             log.Debug("This is entry number: " + i );
@@ -26960,13 +26960,13 @@
                 <para>Alternatively if your logger is available statically then the is debug
             enabled state can be stored in a static variable like this:
             </para>
-                <code lang="C#">
+                <code lang="VB">
             private static readonly bool isDebugEnabled = log.IsDebugEnabled;
             </code>
                 <para>
             Then when you come to log you can write:
             </para>
-                <code lang="C#">
+                <code lang="VB">
             if (isDebugEnabled)
             {
             log.Debug("This is entry number: " + i );
@@ -27853,7 +27853,7 @@
             </para>
             </remarks>
             <example>Simple example of logging messages
-            <code lang="C#">
+            <code lang="VB">
             ILog log = LogManager.GetLogger("application-log");
             log.Info("Application Start");
             log.Debug("This is a debug message");
@@ -28486,12 +28486,12 @@
             </para>
             </remarks>
             <example>Example of using the thread context properties to store a username.
-            <code lang="C#">
+            <code lang="VB">
             LogicalThreadContext.Properties["user"] = userName;
             	log.Info("This log message has a LogicalThreadContext Property called 'user'");
             </code></example>
             <example>Example of how to push a message into the context stack
-            <code lang="C#">
+            <code lang="VB">
             	using(LogicalThreadContext.Stacks["LDC"].Push("my context message"))
             	{
             		log.Info("This log message has a LogicalThreadContext Stack message that includes 'my context message'");
@@ -28688,7 +28688,7 @@
             </para>
             </remarks>
             <example>How to push a message into the context
-            <code lang="C#">
+            <code lang="VB">
             	using(NDC.Push("my context message"))
             	{
             		... all log calls will have 'my context message' included ...
@@ -28832,7 +28832,7 @@
             </para>
             </remarks>
             <example>Simple example of using the <c>Push</c> method with the <c>using</c> keyword.
-            <code lang="C#">
+            <code lang="VB">
             using(log4net.NDC.Push("NDC_Message"))
             {
             		log.Warn("This should have an NDC message");
@@ -28905,12 +28905,12 @@
             </para>
             </remarks>
             <example>Example of using the thread context properties to store a username.
-            <code lang="C#">
+            <code lang="VB">
             ThreadContext.Properties["user"] = userName;
             	log.Info("This log message has a ThreadContext Property called 'user'");
             </code></example>
             <example>Example of how to push a message into the context stack
-            <code lang="C#">
+            <code lang="VB">
             	using(ThreadContext.Stacks["NDC"].Push("my context message"))
             	{
             		log.Info("This log message has a ThreadContext Stack message that includes 'my context message'");

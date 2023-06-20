@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProxySetup.aspx.vb" Inherits="OWASP.WebGoat.NET.ProxySetup" MasterPageFile="~/Resources/Master-Pages/Site.Master"%>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="ProxySetup.aspx.vb" Inherits="OWASP.WebGoat.NET.ProxySetup" MasterPageFile="~/Resources/Master-Pages/Site.Master"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
 </asp:Content>

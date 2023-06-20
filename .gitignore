@@ -1,1 +1,6 @@
 packages
+obj
+lib
+.idea
+.vs
+.DS_Store

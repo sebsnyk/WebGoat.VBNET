@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SQLInjectionDiscovery.aspx.vb" Inherits="OWASP.WebGoat.NET.SQLInjectionDiscovery" MasterPageFile="~/Resources/Master-Pages/Site.Master" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="SQLInjectionDiscovery.aspx.vb" Inherits="OWASP.WebGoat.NET.SQLInjectionDiscovery" MasterPageFile="~/Resources/Master-Pages/Site.Master" %>
 
 
 

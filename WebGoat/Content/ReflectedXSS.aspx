@@ -1,4 +1,4 @@
-<%@ Page Title="" validateRequest="false" Language="C#" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="ReflectedXSS.aspx.vb" Inherits="OWASP.WebGoat.NET.ReflectedXSS" %>
+<%@ Page Title="" validateRequest="false" Language="VB" MasterPageFile="~/Resources/Master-Pages/Site.Master" AutoEventWireup="true" CodeBehind="ReflectedXSS.aspx.vb" Inherits="OWASP.WebGoat.NET.ReflectedXSS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
 </asp:Content>
 
